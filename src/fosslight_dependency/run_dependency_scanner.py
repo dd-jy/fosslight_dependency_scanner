@@ -40,6 +40,7 @@ _exclude_dir = ['node_moduels', 'venv']
 def find_package_manager(input_dir, abs_path_to_exclude=[]):
     ret = True
     manifest_file_name = []
+    print('')
     for value in const.SUPPORT_PACKAE.values():
         if isinstance(value, list):
             manifest_file_name.extend(value)

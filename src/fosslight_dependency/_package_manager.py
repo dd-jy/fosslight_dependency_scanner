@@ -317,7 +317,7 @@ def connect_github(github_token):
     if len(github_token) > 0:
         g = Github(github_token)
     else:
-        g = Github('dummy')
+        g = Github()
 
     return g
 
